@@ -9,6 +9,7 @@ class Timer:
         self.all_phases = dict()
 
     def start_new_phase(self, phase: str):
+        print("starting new phase {}".format(phase))
         now = time.time()
         self.all_phases[self.last_phase] = now - self.last_phase_start
         self.last_phase_start = now
